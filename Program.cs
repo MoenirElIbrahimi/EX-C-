@@ -4,17 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("How many days");
-            int sec = 86400;
-            Console.WriteLine("Give an integer:");
+            Console.WriteLine("Give the first number!");
             string userInput = Console.ReadLine();
-            int days = Convert.ToInt32(userInput);
-            int sum = days * sec;
-            Console.WriteLine(sum);
-
-
-
-
+            int first = Convert.ToInt32(userInput);
+            Console.WriteLine("Give the second number!");
+            string userIn = Console.ReadLine();
+            int second = Convert.ToInt32(userIn);
+            int sum = first + second;
+            Console.WriteLine("the sum is "+ sum);
 
 
         }
