@@ -7,24 +7,28 @@
 
 
             //string srtInput = Console.ReadLine();
-            int counter = 0;
 
+           int sumsum = 0;
             while (true)
             {
             Console.WriteLine("Give a number:");
             string userInput = Console.ReadLine();
             int number = Convert.ToInt32(userInput);// ask 1st for input and convert it
-
-
+ 
+                
                 if(number == 0)
                 {
-                    Console.WriteLine("Total amount of negative numbers: " + counter);
+                    Console.WriteLine("Total sum of numbers: " );
                     break;
                 }
-                if(number < 0) 
-                {
-                    counter++;
-                }
+
+                    int counter =  number;
+                    int sum = counter + sumsum;
+                    Console.WriteLine(sum);
+                
+                
+                    
+              
                 
 
             }
