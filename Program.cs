@@ -18,10 +18,14 @@
 
                 if(number == 0)
                 {
-                    Console.WriteLine("Total amount of numbers: " + counter);
+                    Console.WriteLine("Total amount of negative numbers: " + counter);
                     break;
                 }
-                counter++;
+                if(number < 0) 
+                {
+                    counter++;
+                }
+                
 
             }
         }
