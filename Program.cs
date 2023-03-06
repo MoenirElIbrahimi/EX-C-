@@ -12,13 +12,15 @@
             string userIn = Console.ReadLine();
             double second = Convert.ToDouble(userIn);// ask for 2nd int ask for input and convert
 
-            Console.WriteLine("Give the second number!");
-            string user = Console.ReadLine();
-            double third = Convert.ToDouble(user);// ask for 3nd int ask for input and convert
 
-            double sum = first + second + third;
-            double sumsum= sum / 3;
-            Console.WriteLine("The average is "+ sumsum); 
+            double plus = first + second;
+            double minus = first - second;
+            double keer = first * second;
+            double delen = first / second;
+            Console.WriteLine(first + " + " + second + " = " + plus + "\n"+
+                first + " - " + second + " = " + minus + "\n"+
+                first + " * " + second + " = " + keer+"\n" +
+                first + " / " + second + " = " + delen); 
 
 
         }
