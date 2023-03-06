@@ -4,14 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Give a number:");
+            Console.WriteLine("How old are you");
             string userInput = Console.ReadLine();
             int number = Convert.ToInt32(userInput);
-            if (number > 0) {
-                Console.WriteLine("It is positive");
+            if (number >= 18) {
+                Console.WriteLine("you're an adult!");
             }
             else { 
-                Console.WriteLine("it is not positive");
+                Console.WriteLine("you're under age!");
             }
 
 
