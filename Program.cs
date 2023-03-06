@@ -12,12 +12,9 @@
             string userIn = Console.ReadLine();
             int second = Convert.ToInt32(userIn);// ask for 2nd int ask for input and convert
 
-            Console.WriteLine("Give the second number!");
-            string user = Console.ReadLine();
-            int third = Convert.ToInt32(user);// ask for 3rd int ask for input and convert
 
-            int sum = first + second + third;
-            Console.WriteLine("the sum is "+ sum); // calulates the 3 inputs by + and print it
+            int sum = first + second ;
+            Console.WriteLine(first +" + " +second+ " = "+ sum); // calulates the 2 inputs by + and print it
 
 
         }
