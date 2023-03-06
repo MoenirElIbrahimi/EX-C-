@@ -4,16 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Give a number:");
-            string userInput = Console.ReadLine();
-            int numberst = Convert.ToInt32(userInput);// ask 1st for input and convert it
+            Console.WriteLine("Speak, friend, and enter!");
+ //           string userInput = Console.ReadLine();
+ //           int numberst = Convert.ToInt32(userInput);// ask 1st for input and convert it
+            string srtInput = Console.ReadLine();
 
-
-            if (numberst % 2 == 0) 
+            if (srtInput == "Mellon") 
             {
-            Console.WriteLine("it is even.");
+            Console.WriteLine("Welcome, friend");
             }
-            else { Console.WriteLine("It is odd."); }
+            else { Console.WriteLine("They've got a cave troll!"); }
         }
     }
 }
