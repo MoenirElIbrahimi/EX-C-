@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Your speed!");
+            Console.WriteLine("Give a number:");
             string userInput = Console.ReadLine();
-            int speed = Convert.ToInt32(userInput);
-            if (speed > 120) {
-                Console.WriteLine("Speeding!");
+            int number = Convert.ToInt32(userInput);
+            if (number == 1984) {
+                Console.WriteLine("Orwell");
             }
 
 
