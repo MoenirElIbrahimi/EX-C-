@@ -13,8 +13,9 @@
             int second = Convert.ToInt32(userIn);// ask for 2nd int ask for input and convert
 
 
-            int sum = first * second ;
-            Console.WriteLine(first +" * " +second+ " = "+ sum); // calulates the 2 inputs by * and print it
+            double sum = first + second;
+            double sumsum= sum / 2;
+            Console.WriteLine("The average is "+ sumsum); 
 
 
         }
