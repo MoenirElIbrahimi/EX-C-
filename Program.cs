@@ -5,15 +5,15 @@
         static void Main(string[] args)
         {
 
-            //           string userInput = Console.ReadLine();
-            //           int numberst = Convert.ToInt32(userInput);// ask 1st for input and convert it
 
+//string srtInput = Console.ReadLine();
             while (true)
             {
-                Console.WriteLine("Do you want to continue?");
-                string srtInput = Console.ReadLine();
+            Console.WriteLine("Give a number:");
+            string userInput = Console.ReadLine();
+            int number = Convert.ToInt32(userInput);// ask 1st for input and convert it
 
-                if (srtInput == "no")
+                if (number == 42)
                 {
                     break;
                 }
