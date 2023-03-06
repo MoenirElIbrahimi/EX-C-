@@ -13,8 +13,8 @@
             int second = Convert.ToInt32(userIn);// ask for 2nd int ask for input and convert
 
 
-            int sum = first + second ;
-            Console.WriteLine(first +" + " +second+ " = "+ sum); // calulates the 2 inputs by + and print it
+            int sum = first * second ;
+            Console.WriteLine(first +" * " +second+ " = "+ sum); // calulates the 2 inputs by * and print it
 
 
         }
