@@ -4,16 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Speak, friend, and enter!");
+            Console.WriteLine("Give the first string:");
  //           string userInput = Console.ReadLine();
  //           int numberst = Convert.ToInt32(userInput);// ask 1st for input and convert it
             string srtInput = Console.ReadLine();
+            Console.WriteLine("Give the second string:");
+            string srtInput2 = Console.ReadLine();
 
-            if (srtInput == "Mellon") 
+            if (srtInput == srtInput2) 
             {
-            Console.WriteLine("Welcome, friend");
+            Console.WriteLine("Echo!");
             }
-            else { Console.WriteLine("They've got a cave troll!"); }
+            else { Console.WriteLine("Nope!"); }
         }
     }
 }
