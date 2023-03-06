@@ -4,18 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Give the first string:");
- //           string userInput = Console.ReadLine();
- //           int numberst = Convert.ToInt32(userInput);// ask 1st for input and convert it
-            string srtInput = Console.ReadLine();
-            Console.WriteLine("Give the second string:");
-            string srtInput2 = Console.ReadLine();
 
-            if (srtInput == srtInput2) 
+            //           string userInput = Console.ReadLine();
+            //           int numberst = Convert.ToInt32(userInput);// ask 1st for input and convert it
+
+            while (true)
             {
-            Console.WriteLine("Echo!");
+                Console.WriteLine("Do you want to continue?");
+                string srtInput = Console.ReadLine();
+
+                if (srtInput == "no")
+                {
+                    break;
+                }
+
+
             }
-            else { Console.WriteLine("Nope!"); }
         }
     }
 }
