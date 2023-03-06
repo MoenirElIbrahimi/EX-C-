@@ -4,14 +4,24 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("How old are you");
+            Console.WriteLine("Give the first number!");
             string userInput = Console.ReadLine();
-            int number = Convert.ToInt32(userInput);
-            if (number >= 18) {
-                Console.WriteLine("you're an adult!");
+            int numberst = Convert.ToInt32(userInput);// ask 1st for input and convert it
+
+            Console.WriteLine("Give the second number!");
+            string userIn = Console.ReadLine();
+            int numbernd = Convert.ToInt32(userIn);// ask 2nd for input and convert it
+
+
+            if (numberst > numbernd) {
+                Console.WriteLine("The larger number is "+ numberst);
             }
-            else { 
-                Console.WriteLine("you're under age!");
+            if (numberst < numbernd)
+            {
+                Console.WriteLine("The larger number is " + numbernd);
+            }
+            if (numberst == numbernd) { 
+                Console.WriteLine("They are equal!");
             }
 
 
