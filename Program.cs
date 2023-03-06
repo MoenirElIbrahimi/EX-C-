@@ -4,12 +4,14 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Give me truth");
+            string truth = Console.ReadLine();
+            bool booleanValue = System.Convert.ToBoolean(truth);
+            Console.WriteLine(booleanValue);
 
-            Console.WriteLine("Give a number!");
-            String userInput = Console.ReadLine();          
-            double DoubleValue = Convert.ToDouble(userInput);
-            Console.WriteLine("You gave " + DoubleValue);
-   
+
+
+
 
 
         }
