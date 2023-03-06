@@ -4,27 +4,43 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Give the first number!");
+            Console.WriteLine("Give your percent [0-100]");
             string userInput = Console.ReadLine();
             int numberst = Convert.ToInt32(userInput);// ask 1st for input and convert it
 
-            Console.WriteLine("Give the second number!");
-            string userIn = Console.ReadLine();
-            int numbernd = Convert.ToInt32(userIn);// ask 2nd for input and convert it
 
-
-            if (numberst > numbernd) {
-                Console.WriteLine("The larger number is "+ numberst);
-            }
-            if (numberst < numbernd)
+            if (numberst < 0) 
             {
-                Console.WriteLine("The larger number is " + numbernd);
+            Console.WriteLine("Impossible");
             }
-            if (numberst == numbernd) { 
-                Console.WriteLine("They are equal!");
+            else if (numberst > 100) 
+            { 
+            Console.WriteLine("Outstanding!");
             }
-
-
+            else if (numberst > 89)
+            {
+            Console.WriteLine("5");
+            }
+            else if (numberst > 79)
+            {
+            Console.WriteLine("4");
+            }
+            else if (numberst > 69)
+            {
+            Console.WriteLine("3");
+            }
+            else if (numberst > 59)
+            {
+            Console.WriteLine("2");
+            }
+            else if (numberst > 49)
+            {
+            Console.WriteLine("1");
+            }
+            else if (numberst >= 0)
+            {
+            Console.WriteLine("Fail");
+            }
         }
     }
 }
