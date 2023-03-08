@@ -22,9 +22,10 @@
                     break;
                 }
 
-                    int counter =  number;
-                    int sum = counter + sumsum;
-                    Console.WriteLine(sum);
+                    //int counter =  number;
+                   // int sum = counter + sumsum;
+                   sumsum = sumsum + number;
+                    Console.WriteLine(sumsum);
                 
                 
                     
