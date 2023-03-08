@@ -1,11 +1,13 @@
-﻿namespace HelloWorld
+﻿using System.Diagnostics.Metrics;
+
+namespace HelloWorld
 {
     internal class Program
     {
         static void Main(string[] args)
         {
 
-
+            int counter = 0;
             //string srtInput = Console.ReadLine();
 
            int sumsum = 0;
@@ -18,14 +20,14 @@
                 
                 if(number == 0)
                 {
-                    Console.WriteLine("Total sum of numbers: " );
+                    Console.WriteLine("Total sum of numbers: " + sumsum );
+                    Console.WriteLine("Total amount of numbers: " + counter);
                     break;
                 }
 
-                    //int counter =  number;
-                   // int sum = counter + sumsum;
-                   sumsum = sumsum + number;
-                    Console.WriteLine(sumsum);
+
+                    sumsum = sumsum + number;
+                    counter++;
                 
                 
                     
