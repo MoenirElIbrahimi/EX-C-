@@ -9,7 +9,8 @@ namespace HelloWorld
             //PrintUntilNumber(6);
             //PrintPhrase();
             //PrintFromNumberToOne(10);
-            Division(5,2);
+            //Division(5,2);
+            DivisibleByThreeInRange(1, 34);
 
 
 
@@ -53,6 +54,17 @@ namespace HelloWorld
             double result = (double)numerator / denominator;
             Console.WriteLine(result);
         }
+
+        public static void DivisibleByThreeInRange(int beginning, int end)
+        {
+            for (int i = beginning; i < end; i++)
+            {
+            if (i % 3 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+        }
+            }
 
 
 
