@@ -6,8 +6,9 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            PrintUntilNumber(6);
+            //PrintUntilNumber(6);
             //PrintPhrase();
+            PrintFromNumberToOne(10);
 
 
 
@@ -36,10 +37,19 @@ namespace HelloWorld
                 counter++;
             }
         }
-
-
-
-
-
+        public static void PrintFromNumberToOne(int number)
+        {
+            int counter = 1;
+            while (number >= counter)
+            {
+                Console.WriteLine(number);
+                number--;
+            }
         }
+
+
+
+
+
+    }
     }
