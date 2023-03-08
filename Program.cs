@@ -8,7 +8,8 @@ namespace HelloWorld
         {
             //PrintUntilNumber(6);
             //PrintPhrase();
-            PrintFromNumberToOne(10);
+            //PrintFromNumberToOne(10);
+            Division(5,2);
 
 
 
@@ -45,6 +46,12 @@ namespace HelloWorld
                 Console.WriteLine(number);
                 number--;
             }
+        }
+        public static void Division(int numerator, int denominator) 
+        {
+            //double random = numerator;
+            double result = (double)numerator / denominator;
+            Console.WriteLine(result);
         }
 
 
