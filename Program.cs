@@ -6,17 +6,35 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            PrintPhrase();
-
+            PrintUntilNumber(6);
+            //PrintPhrase();
 
 
 
             }
         public static void PrintPhrase() 
         {
+            int counter = 0;
+            Console.WriteLine("How many times?");
+            string userInput = Console.ReadLine();
+            int number = Convert.ToInt32(userInput);
 
-            Console.WriteLine("In a hole in the ground there lived a method");
+            while (counter < number)
+            {
+                Console.WriteLine("In a hole in the ground there lived a method");
+                counter++;
+            }
+            
         
+        }
+        public static void PrintUntilNumber(int number)
+        {
+            int counter = 1;
+            while (number >= counter)
+            {
+                Console.WriteLine(counter);
+                counter++;
+            }
         }
 
 
