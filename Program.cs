@@ -36,10 +36,26 @@ namespace HelloWorld
 
         public static void LastPartSplit()
         {
-            string userInput = Console.ReadLine();
-            string[] piece = userInput.Split(" ");
-            Console.WriteLine("Number of parts: " + piece[piece.Length-1]);
-     
+            int age = 0;
+
+            while (true)
+            {
+                string input = Console.ReadLine();
+
+                
+                if (input == "")
+                {
+                    break;
+                }
+
+                string[] pieces = input.Split(",");
+                int inputInt = Convert.ToInt32(pieces[1]);
+                if (inputInt > age)
+                {
+                    age = inputInt;
+                }
+            }
+            Console.WriteLine("Age of the oldest: "+ age);
         }
 
 
