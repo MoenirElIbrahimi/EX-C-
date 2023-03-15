@@ -6,8 +6,8 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Login();
-
+            //Login();
+            LastPartSplit();
 
 
             }
@@ -32,10 +32,15 @@ namespace HelloWorld
             }
             //int number = Convert.ToInt32(userInput);
 
-
-
         }
 
+        public static void LastPartSplit()
+        {
+            string userInput = Console.ReadLine();
+            string[] piece = userInput.Split(" ");
+            Console.WriteLine("Number of parts: " + piece[piece.Length-1]);
+     
+        }
 
 
 
