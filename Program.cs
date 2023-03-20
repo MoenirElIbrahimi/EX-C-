@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.Metrics;
+using System.Xml.Linq;
 
 namespace HelloWorld
 {
@@ -36,8 +37,10 @@ namespace HelloWorld
 
         public static void LastPartSplit()
         {
-            int age = 0;
-            String oldname = "";
+            int age = 2024;
+            int brithyear = 2023;
+            string longname = "";
+            int longer = 0;
             
             while (true)
             {
@@ -52,16 +55,23 @@ namespace HelloWorld
                 string[] pieces = input.Split(",");
                 String name = pieces[0];
                 int inputInt = Convert.ToInt32(pieces[1]);
-
-                if (inputInt > age)
+                int lengte = name.Length;
+                if (inputInt < age)
                 {
                     age = inputInt;
-                    oldname = name;
 
                 }
-                
+                if (lengte > longer)
+                {
+                    longname = name;
+                    longer = lengte;
+                }
+
             }
-            Console.WriteLine("Name of the oldest: " + oldname);
+            
+            age = brithyear - age;
+            Console.WriteLine("Highest age: " + age);
+            Console.WriteLine("Longest name: " + longname);
 
 
         }
