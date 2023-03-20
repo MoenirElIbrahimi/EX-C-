@@ -37,7 +37,8 @@ namespace HelloWorld
         public static void LastPartSplit()
         {
             int age = 0;
-
+            String oldname = "";
+            
             while (true)
             {
                 string input = Console.ReadLine();
@@ -49,13 +50,20 @@ namespace HelloWorld
                 }
 
                 string[] pieces = input.Split(",");
+                String name = pieces[0];
                 int inputInt = Convert.ToInt32(pieces[1]);
+
                 if (inputInt > age)
                 {
                     age = inputInt;
+                    oldname = name;
+
                 }
+                
             }
-            Console.WriteLine("Age of the oldest: "+ age);
+            Console.WriteLine("Name of the oldest: " + oldname);
+
+
         }
 
 
