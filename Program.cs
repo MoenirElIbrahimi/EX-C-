@@ -1,84 +1,47 @@
-﻿using System.Diagnostics.Metrics;
+﻿using HelloWorld;
+using System.Diagnostics.Metrics;
 using System.Xml.Linq;
 
-namespace HelloWorld
+List<Book> books = new List<Book>();
+
+while (true)
 {
-    internal class Program
+    Console.Write("Name: ");
+    string title = Console.ReadLine().Trim();
+    if (string.IsNullOrEmpty(title))
     {
-        static void Main(string[] args)
-        {
-            //Login();
-            LastPartSplit();
-
-
-            }
-        public static void Login() 
-        {
-
-            Console.WriteLine("Enter username:");
-            string userInput = Console.ReadLine();
-            Console.WriteLine("Enter password:");
-            string userInput1 = Console.ReadLine();
-            if (userInput == "alex" & userInput1 == "sunshine")
-            {
-                Console.WriteLine("You have successfully logged in!");
-            }
-            else if  (userInput == "emma" & userInput1 == "haskell")
-            {
-                Console.WriteLine("You have successfully logged in!");
-            }
-            else
-            {
-                Console.WriteLine("Incorrect username or password!");
-            }
-            //int number = Convert.ToInt32(userInput);
-
-        }
-
-        public static void LastPartSplit()
-        {
-            int age = 2024;
-            int brithyear = 2023;
-            string longname = "";
-            int longer = 0;
-            
-            while (true)
-            {
-                string input = Console.ReadLine();
-
-                
-                if (input == "")
-                {
-                    break;
-                }
-
-                string[] pieces = input.Split(",");
-                String name = pieces[0];
-                int inputInt = Convert.ToInt32(pieces[1]);
-                int lengte = name.Length;
-                if (inputInt < age)
-                {
-                    age = inputInt;
-
-                }
-                if (lengte > longer)
-                {
-                    longname = name;
-                    longer = lengte;
-                }
-
-            }
-            
-            age = brithyear - age;
-            Console.WriteLine("Highest age: " + age);
-            Console.WriteLine("Longest name: " + longname);
-
-
-        }
-
-
-
-
-
+        break;
     }
-    }
+
+    Console.Write("Pages: ");
+    int pages = int.Parse(Console.ReadLine().Trim());
+
+    Console.Write("Publication year: ");
+    int publicationYear = int.Parse(Console.ReadLine().Trim());
+
+    Book book = new Book(title, pages, publicationYear);
+    books.Add(book);
+}
+
+Console.Write("What information will be printed? ");
+string option = Console.ReadLine().Trim().ToLower();
+
+switch (option)
+{
+    case "everything":
+        foreach (Book book in books)
+        {
+            Console.WriteLine(book);
+        }
+        break;
+
+    case "title":
+        foreach (Book book in books)
+        {
+            Console.WriteLine(book.title);
+        }
+        break;
+
+    default:
+        break;
+}
