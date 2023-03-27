@@ -1,31 +1,23 @@
 ﻿using HelloWorld;
 using System.Diagnostics.Metrics;
 using System.Xml.Linq;
+using System;
+using System.IO;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        int total = 0;
-        int sum = 0;
-        int number = 0; 
-        int counter = 0;
-        while (true)
+        string filePath = "C:\\Users\\moeni\\OneDrive\\Bureaublad\\school\\C#\\HelloWorld\\data.txt";
+        StreamReader reader = new StreamReader(filePath);
+
+        while (!reader.EndOfStream)
         {
-            
-            string loop = Console.ReadLine();
-
-            if (loop == "end")
-            {
-                break;
-            }
-            int getal = Convert.ToInt32(loop);
-
-                sum = getal * getal * getal;
-                Console.WriteLine(sum);
-
-            counter++;
+            string line = reader.ReadLine();
+            Console.WriteLine(line);
         }
+
+        reader.Close();
 
     }
 }
