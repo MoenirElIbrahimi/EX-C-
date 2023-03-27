@@ -6,18 +6,27 @@ using System.IO;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
-        string filePath = "C:\\Users\\moeni\\OneDrive\\Bureaublad\\school\\C#\\HelloWorld\\data.txt";
-        StreamReader reader = new StreamReader(filePath);
+        string[] guestList = File.ReadAllLines("C:\\Users\\moeni\\OneDrive\\Bureaublad\\school\\C#\\HelloWorld\\guestlist.txt");
 
-        while (!reader.EndOfStream)
+        Console.WriteLine("Enter names, an empty line quits.");
+        while (true)
         {
-            string line = reader.ReadLine();
-            Console.WriteLine(line);
+            string name = Console.ReadLine();
+            if (name == "")
+            {
+                break;
+            }
+
+            if (Array.IndexOf(guestList, name) >= 0)
+            {
+                Console.WriteLine("The name is on the list.");
+            }
+            else
+            {
+                Console.WriteLine("The name is not on the list.");
+            }
         }
-
-        reader.Close();
-
     }
 }
