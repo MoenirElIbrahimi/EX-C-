@@ -25,8 +25,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-9 EX", "..\1-9 EX\1-9 EX.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-10 EX", "..\1-10 EX\1-10 EX.csproj", "{2AD16639-2A14-4832-A138-237304E3860B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-12 EX", "..\VAR-1-1\1-12 EX.csproj", "{B97943D8-D2A6-4E56-88D8-1AAB68FDCC9F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E88A04D-D5A1-4A3D-AD24-E66AD64D1A60}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -82,10 +80,6 @@ Global
 		{2AD16639-2A14-4832-A138-237304E3860B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AD16639-2A14-4832-A138-237304E3860B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AD16639-2A14-4832-A138-237304E3860B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B97943D8-D2A6-4E56-88D8-1AAB68FDCC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B97943D8-D2A6-4E56-88D8-1AAB68FDCC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B97943D8-D2A6-4E56-88D8-1AAB68FDCC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B97943D8-D2A6-4E56-88D8-1AAB68FDCC9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
